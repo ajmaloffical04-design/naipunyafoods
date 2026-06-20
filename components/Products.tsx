@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Products() {
   return (
     <section className="products-section" id="products">
@@ -26,9 +28,9 @@ export default function Products() {
                 <li>Healthy &amp; Edible</li>
               </ul>
 
-              <a href="#" className="product-shop-btn">
+              <Link href="/products" className="product-shop-btn">
                 Shop Now <span>→</span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -52,9 +54,9 @@ export default function Products() {
                 <li>Ideal for Puja &amp; Lamps</li>
               </ul>
 
-              <a href="#" className="product-shop-btn">
+              <Link href="/products" className="product-shop-btn">
                 Shop Now <span>→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

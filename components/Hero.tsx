@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Leaf, Droplets, Heart, ArrowRight } from "lucide-react";
 
 export default function Hero() {
@@ -53,9 +54,9 @@ export default function Hero() {
             </div>
           </div>
 
-          <button className="shop-btn inline-flex w-fit items-center gap-2">
+          <Link href="/products" className="shop-btn inline-flex w-fit items-center gap-2">
             Shop Now <ArrowRight size={18} strokeWidth={1.5} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
