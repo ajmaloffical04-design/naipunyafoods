@@ -9,7 +9,18 @@ import Footer from "@/components/Footer";
 const contactInfo = [
   { icon: Mail, label: "Email", value: "info@naipunyafoods.com" },
   { icon: Phone, label: "Phone", value: "+91 XXXXX XXXXX" },
-  { icon: MapPin, label: "Location", value: "Kerala, India" },
+  { 
+    icon: MapPin, 
+    label: "Location", 
+    value: (
+      <span className="leading-relaxed block mt-1 text-sm font-medium text-[#1A1A1A]">
+        NAIPUNYA FOODS<br />
+        Door No : 18/518 (2)<br />
+        Puthur Road, Koppam<br />
+        Palakkad 678001
+      </span>
+    ) 
+  },
 ];
 
 export default function ContactPage() {
@@ -66,7 +77,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <p className="text-xs font-semibold text-[#1A1A1A]/40 uppercase tracking-wider">{label}</p>
-                        <p className="text-sm font-medium text-[#1A1A1A]">{value}</p>
+                        <div className="text-sm font-medium text-[#1A1A1A]">{value}</div>
                       </div>
                     </motion.div>
                   ))}

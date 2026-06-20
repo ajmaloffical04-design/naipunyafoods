@@ -112,8 +112,13 @@ export default function Footer() {
                 <span>+91 XXXXX XXXXX</span>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-[#1A1A1A]/70">
-                <MapPin size={14} className="mt-0.5 text-[#D4A24C] flex-shrink-0" />
-                <span>Kerala, India</span>
+                <MapPin size={14} className="mt-1 text-[#D4A24C] flex-shrink-0" />
+                <span className="leading-relaxed">
+                  NAIPUNYA FOODS<br />
+                  Door No : 18/518 (2)<br />
+                  Puthur Road, Koppam<br />
+                  Palakkad 678001
+                </span>
               </li>
             </ul>
           </div>
