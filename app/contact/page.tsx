@@ -7,8 +7,17 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "info@naipunyafoods.com" },
-  { icon: Phone, label: "Phone", value: "+91 XXXXX XXXXX" },
+  { 
+    icon: Mail, 
+    label: "Email", 
+    value: (
+      <span className="flex flex-col gap-1">
+        <span>care@naipunyafoods.com</span>
+        <span>info@naipunyafoods.com</span>
+      </span>
+    ) 
+  },
+  { icon: Phone, label: "Phone", value: "+91 90741 42300" },
   { 
     icon: MapPin, 
     label: "Location", 
@@ -27,8 +36,25 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    try {
+      await fetch("https://formsubmit.co/ajax/info@naipunyafoods.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          _subject: "New message from Naipunya Foods Website"
+        })
+      });
+    } catch (error) {
+      console.error("Form submission error", error);
+    }
     setSubmitted(true);
   };
 

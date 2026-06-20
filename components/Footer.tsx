@@ -104,12 +104,15 @@ export default function Footer() {
             </h4>
             <ul className="flex flex-col gap-3">
               <li className="flex items-start gap-2.5 text-sm text-[#1A1A1A]/70">
-                <Mail size={14} className="mt-0.5 text-[#D4A24C] flex-shrink-0" />
-                <span>info@naipunyafoods.com</span>
+                <Mail size={14} className="mt-1 text-[#D4A24C] flex-shrink-0" />
+                <span className="flex flex-col gap-0.5">
+                  <span>care@naipunyafoods.com</span>
+                  <span>info@naipunyafoods.com</span>
+                </span>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-[#1A1A1A]/70">
                 <Phone size={14} className="mt-0.5 text-[#D4A24C] flex-shrink-0" />
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 90741 42300</span>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-[#1A1A1A]/70">
                 <MapPin size={14} className="mt-1 text-[#D4A24C] flex-shrink-0" />
