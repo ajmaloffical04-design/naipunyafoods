@@ -48,12 +48,12 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto px-6 lg:px-10 h-24 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 relative z-10">
             <div className="flex items-center gap-2">
               <div
-                className={`relative w-64 h-20 transition-all duration-300 ${
+                className={`relative w-80 h-24 transition-all duration-300 ${
                   scrolled ? "" : "brightness-100"
                 }`}
               >
