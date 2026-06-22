@@ -21,7 +21,7 @@ export default function Hero() {
           alt="Coconut Oil Mobile"
           fill
           priority
-          className="block lg:hidden object-cover object-[center_90%]"
+          className="block lg:hidden object-cover object-top"
         />
       </div>
 
