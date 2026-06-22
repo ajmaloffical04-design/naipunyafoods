@@ -7,12 +7,21 @@ export default function Hero() {
     <section className="relative min-h-[100svh] flex flex-col lg:flex-row items-start lg:items-center bg-[#f7f3ef] overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#f7f3ef] to-transparent z-10 lg:hidden"></div>
+        {/* Desktop Image */}
         <Image
-          src="/hero.png"
-          alt="Coconut Oil"
+          src="/herodesktop.png"
+          alt="Coconut Oil Desktop"
           fill
           priority
-          className="object-cover object-[center_90%] lg:object-[center_top]"
+          className="hidden lg:block object-cover object-[center_top]"
+        />
+        {/* Mobile Image */}
+        <Image
+          src="/hero.png"
+          alt="Coconut Oil Mobile"
+          fill
+          priority
+          className="block lg:hidden object-cover object-[center_90%]"
         />
       </div>
 
