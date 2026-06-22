@@ -22,7 +22,7 @@ export default function Hero() {
             alt="Coconut Oil Mobile"
             fill
             priority
-            className="object-cover object-top"
+            className="object-contain object-top"
           />
         </div>
       </div>
