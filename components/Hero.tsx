@@ -16,13 +16,15 @@ export default function Hero() {
           className="hidden lg:block object-cover object-[center_top]"
         />
         {/* Mobile Image */}
-        <Image
-          src="/heromobile.png"
-          alt="Coconut Oil Mobile"
-          fill
-          priority
-          className="block lg:hidden object-cover object-top"
-        />
+        <div className="absolute inset-0 top-24 lg:hidden">
+          <Image
+            src="/heromobile.png"
+            alt="Coconut Oil Mobile"
+            fill
+            priority
+            className="object-cover object-top"
+          />
+        </div>
       </div>
 
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-10 relative z-10 pt-28 lg:pt-32 pb-[45vh] lg:pb-20">
