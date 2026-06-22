@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Naipunya Foods" }],
   creator: "Naipunya Foods",
   publisher: "Naipunya Foods",
+  verification: {
+    google: "N0k-ru2BTVFoGqxWU1yMJBpOToQMqNekWt5K-mKbCM0",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
