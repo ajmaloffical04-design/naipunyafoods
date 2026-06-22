@@ -26,7 +26,7 @@ export default function Hero() {
       </div>
 
       <div className="w-full max-w-7xl mx-auto px-6 lg:px-10 relative z-10 pt-28 lg:pt-32 pb-[45vh] lg:pb-20">
-        <div className="hero-content max-w-[550px] flex flex-col">
+        <div className="hero-content max-w-[550px] hidden lg:flex flex-col">
           <span className="tag mb-4">PURE BY NATURE</span>
 
           <h1
