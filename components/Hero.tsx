@@ -4,31 +4,34 @@ import { Leaf, Droplets, Heart, ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[100svh] flex flex-col lg:flex-row items-start lg:items-center bg-[#f7f3ef] overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#f7f3ef] to-transparent z-10 lg:hidden"></div>
-        {/* Desktop Image */}
+    <section className="relative lg:min-h-[100svh] flex flex-col lg:flex-row items-start lg:items-center bg-[#f7f3ef] overflow-hidden">
+      
+      {/* Desktop Background */}
+      <div className="absolute inset-0 z-0 hidden lg:block">
         <Image
           src="/herodesktop.png"
           alt="Coconut Oil Desktop"
           fill
           priority
-          className="hidden lg:block object-cover object-[center_top]"
+          className="object-cover object-[center_top]"
         />
-        {/* Mobile Image */}
-        <div className="absolute inset-0 top-24 lg:hidden">
-          <Image
-            src="/heromobile.png"
-            alt="Coconut Oil Mobile"
-            fill
-            priority
-            className="object-contain object-top"
-          />
-        </div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-10 relative z-10 pt-28 lg:pt-32 pb-[45vh] lg:pb-20">
-        <div className="hero-content max-w-[550px] hidden lg:flex flex-col">
+      {/* Mobile Image (Normal flow to prevent cropping) */}
+      <div className="w-full pt-24 relative z-0 block lg:hidden">
+        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#f7f3ef] to-transparent z-10"></div>
+        <Image
+          src="/heromobile.png"
+          alt="Coconut Oil Mobile"
+          width={1080}
+          height={1920}
+          priority
+          className="w-full h-auto"
+        />
+      </div>
+
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-10 relative z-10 lg:pt-32 lg:pb-20 hidden lg:block">
+        <div className="hero-content max-w-[550px] flex flex-col">
           <span className="tag mb-4">PURE BY NATURE</span>
 
           <h1
