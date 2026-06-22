@@ -9,7 +9,7 @@ export default function WhatsAppButton() {
       initial={{ opacity: 0, scale: 0.8, y: 20 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ delay: 1, duration: 0.5, type: "spring" }}
-      className="fixed bottom-6 left-6 z-50"
+      className="fixed bottom-6 right-6 z-50"
     >
       <Link
         href="https://wa.me/919074142300"
