@@ -17,7 +17,7 @@ export default function Hero() {
         />
         {/* Mobile Image */}
         <Image
-          src="/hero.png"
+          src="/heromobile.png"
           alt="Coconut Oil Mobile"
           fill
           priority
