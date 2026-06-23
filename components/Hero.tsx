@@ -18,10 +18,10 @@ export default function Hero() {
       </div>
 
       {/* Mobile Image (Normal flow to prevent cropping) */}
-      <div className="w-full pt-24 relative z-0 block lg:hidden">
+      <div className="w-full pt-20 relative z-0 block lg:hidden">
         <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#f7f3ef] to-transparent z-10"></div>
         <Image
-          src="/heromobile.png"
+          src="/mobiehero.png"
           alt="Coconut Oil Mobile"
           width={1080}
           height={1920}
