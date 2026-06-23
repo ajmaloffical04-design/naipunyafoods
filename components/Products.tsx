@@ -11,7 +11,7 @@ export default function Products() {
           {/* Coconut Oil */}
           <div className="product-card">
             <div className="product-image">
-              <img src="/coconutoill.png?v=3" alt="Coconut Oil" />
+              <img src="/coconutoil.png" alt="Coconut Oil" />
             </div>
 
             <div className="product-content">
@@ -37,7 +37,7 @@ export default function Products() {
           {/* Deepam Oil */}
           <div className="product-card">
             <div className="product-image">
-              <img src="/deepamoil.png?v=3" alt="Deepam Oil" />
+              <img src="/deepamoil.png" alt="Deepam Oil" />
             </div>
 
             <div className="product-content">
