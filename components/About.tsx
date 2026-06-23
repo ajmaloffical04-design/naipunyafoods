@@ -123,7 +123,7 @@ export default function About() {
             <div className="absolute -top-4 -right-4 w-full h-full rounded-3xl border-2 border-[#D4A24C]/20 pointer-events-none" />
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/coconut-oil.png"
+                src="/coconutoil.png"
                 alt="Natural coconut and coconut oil – pure Kerala goodness"
                 fill
                 className="object-cover scale-110 group-hover:scale-100 transition-transform duration-700"
